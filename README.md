@@ -7,7 +7,7 @@ Enouvo Eslint config with:
 
 ## Usage
 
-Add `"extends": "@enouvo-packages/eslint-config-react"` to your eslint config file.
+Add `"extends": "@enouvo/eslint-config-react"` to your eslint config file.
 
 Example:
 
@@ -15,7 +15,7 @@ File: `.eslintrc.json`
 
 ```
 {
-  "extends": ["@enouvo-packages/eslint-config-react"]
+  "extends": ["@enouvo/eslint-config-react"]
 }
 ```
 
