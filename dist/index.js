@@ -80,9 +80,11 @@ module.exports = {
     'no-param-reassign': 'error',
     'prefer-destructuring': ['error'],
     'object-shorthand': 'error',
+    'dot-notation': 'error',
     'multiline-comment-style': ['error', 'starred-block'],
     'prefer-template': 'error',
     'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
+    'default-case-last': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
