@@ -1,6 +1,6 @@
 {
   "name": "@enouvo/eslint-config-react",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Eslint config for enouvo front end development",
   "main": "dist/index.js",
   "files": [
@@ -13,22 +13,24 @@
     "url": "https://github.com/Enouvo/eslint-config-react"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^5.30.6",
+    "@typescript-eslint/parser": "^5.36.1",
+    "add": "^2.0.6",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.6.0",
-    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-jest": "^27.0.1",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "eslint-import-resolver-typescript": "^3.2.7"
+    "eslint-plugin-react": "^7.31.6",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
     "eslint": "^8.3.0",
-    "prettier": "^2.5.0",
-    "eslint-plugin-react": "^7.29.2",
-    "eslint-plugin-react-hooks": "^4.4.0"
+    "prettier": "^2.5.0"
   },
   "publishConfig": {
     "access": "public"

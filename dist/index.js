@@ -34,7 +34,7 @@ module.exports = {
     'plugin:import/warnings',
   ],
   overrides: [{ extends: 'plugin:jest/all', files: ['src'] }],
-  plugins: ['@typescript-eslint', 'jest', 'unused-imports', 'import', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'jest', 'unused-imports', 'import', 'react-hooks', 'sort-keys-fix'],
   root: true,
   ignorePatterns: ['*.js', 'node_modules', '**/schemas.tsx', '**/translationKeys.ts'],
   rules: {
