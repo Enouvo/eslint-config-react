@@ -113,5 +113,20 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'no-restricted-imports': [
+      'error',
+      {
+        patterns: [
+          {
+            group: ['lodash'],
+            message: "Please use import from 'lodash-es' instead.",
+          },
+          {
+            group: ['moment'],
+            message: "Please use import from 'dayjs' instead.",
+          },
+        ],
+      },
+    ],
   },
 };
