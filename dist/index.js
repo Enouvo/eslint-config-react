@@ -41,7 +41,7 @@ module.exports = {
     'sort-keys-fix/sort-keys-fix': 'error',
     'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
     'no-console': 'warn',
-    'import/no-unresolved': 'error',
+    'import/no-unresolved': [2, { ignore: ['~react-pages'] }],
     '@typescript-eslint/naming-convention': [
       'error',
       {
