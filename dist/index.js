@@ -111,6 +111,9 @@ module.exports = {
         namedComponents: 'function-declaration',
       },
     ],
+    'react/button-has-type': 'error',
+    'react/hook-use-state': 'error',
+    'react/jsx-sort-props': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'no-restricted-imports': [
