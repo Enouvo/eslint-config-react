@@ -116,6 +116,7 @@ module.exports = {
     'react/jsx-sort-props': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react/destructuring-assignment': 'error',
     'no-restricted-imports': [
       'error',
       {
