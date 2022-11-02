@@ -69,6 +69,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'error',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
+    'react/jsx-fragments': 'error',
+    'react/no-unused-prop-types': 'error',
     'max-lines': ['error', 500],
     'no-nested-ternary': ['error'],
     'arrow-body-style': ['error', 'as-needed'],
