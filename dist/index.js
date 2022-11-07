@@ -119,6 +119,9 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/destructuring-assignment': 'error',
+    'import/newline-after-import': 'error',
+    '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/array-type': 'error',
     'no-restricted-imports': [
       'error',
       {
@@ -130,6 +133,10 @@ module.exports = {
           {
             group: ['moment'],
             message: "Please use import from 'dayjs' instead.",
+          },
+          {
+            group: ['../../*'],
+            message: 'Please use alias import instead of deep parent import',
           },
         ],
       },
