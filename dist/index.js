@@ -1,11 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
+    project: './tsconfig.json',
   },
   settings: {
     'import/parsers': {
@@ -122,6 +118,8 @@ module.exports = {
     'import/newline-after-import': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/array-type': 'error',
+    '@typescript-eslint/no-unnecessary-condition': 'error',
+    '@typescript-eslint/method-signature-style': 'error',
     'no-restricted-imports': [
       'error',
       {
