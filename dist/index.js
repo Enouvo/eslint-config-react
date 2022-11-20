@@ -34,6 +34,7 @@ module.exports = {
   root: true,
   ignorePatterns: ['*.js', 'node_modules', '**/schemas.tsx', '**/translationKeys.ts'],
   rules: {
+    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     'sort-keys-fix/sort-keys-fix': 'error',
     'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
     'no-console': 'warn',
@@ -120,13 +121,13 @@ module.exports = {
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/method-signature-style': 'error',
-    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
-    "@typescript-eslint/no-duplicate-enum-values": "error",
-    "@typescript-eslint/no-unnecessary-qualifier": "error",
-    "@typescript-eslint/no-unnecessary-type-arguments": "error",
-    "@typescript-eslint/no-unnecessary-type-assertion": "error",
-    "@typescript-eslint/no-unnecessary-type-constraint": "error",
-    "@typescript-eslint/no-useless-empty-export": "error",
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
+    '@typescript-eslint/no-unnecessary-qualifier': 'error',
+    '@typescript-eslint/no-unnecessary-type-arguments': 'error',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+    '@typescript-eslint/no-useless-empty-export': 'error',
     'no-restricted-imports': [
       'error',
       {
