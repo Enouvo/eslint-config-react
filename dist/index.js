@@ -44,7 +44,28 @@ module.exports = {
     'prefer-object-spread': 'error',
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     'sort-keys-fix/sort-keys-fix': 'error',
-    'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
+    'import/order': [
+      'error',
+      {
+        alphabetize: { order: 'asc', caseInsensitive: true },
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+        'newlines-between': 'never',
+        pathGroups: [
+          {
+            pattern: 'react',
+            group: 'builtin',
+            position: 'before',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['builtin'],
+      },
+    ],
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
     'no-console': 'warn',
     'import/no-unresolved': [2, { ignore: ['~react-pages'] }],
     '@typescript-eslint/naming-convention': [
