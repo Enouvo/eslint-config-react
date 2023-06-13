@@ -159,6 +159,7 @@ module.exports = {
     'react/button-has-type': 'error',
     'react/hook-use-state': 'error',
     'react/jsx-sort-props': 'error',
+    'react/self-closing-comp': 'error',
     'react/no-unstable-nested-components': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
