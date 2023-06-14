@@ -30,11 +30,12 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:jsx-a11y/recommended',
   ],
   overrides: [{ extends: 'plugin:jest/all', files: ['src'] }],
   plugins: ['@typescript-eslint', 'jest', 'unused-imports', 'import', 'react-hooks', 'sort-keys-fix'],
   root: true,
-  ignorePatterns: ['*.js', 'node_modules', '**/schemas.tsx', '**/translationKeys.ts'],
+  ignorePatterns: ['*.js', 'node_modules', '**/schemas.tsx'],
   rules: {
     'no-new-object': 'error',
     'no-loop-func': 'error',
@@ -165,6 +166,15 @@ module.exports = {
     'react/no-unstable-nested-components': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-no-script-url': [
+      'error',
+      [
+        {
+          name: 'Link',
+          props: ['to'],
+        },
+      ],
+    ],
     'react/destructuring-assignment': 'error',
     'import/newline-after-import': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
