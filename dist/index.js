@@ -156,6 +156,8 @@ module.exports = {
         namedComponents: 'function-declaration',
       },
     ],
+    'react/jsx-no-leaked-render': 'error',
+    'react/jsx-handler-names': ['error', { checkInlineFunction: true }],
     'react/button-has-type': 'error',
     'react/hook-use-state': 'error',
     'react/jsx-sort-props': 'error',
