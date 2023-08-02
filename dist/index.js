@@ -188,6 +188,19 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-useless-empty-export': 'error',
+    '@typescript-eslint/padding-line-between-statements': [
+      'error',
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: ['interface', 'type', 'block-like'],
+      },
+      {
+        blankLine: 'always',
+        prev: ['interface', 'type', 'export', 'block-like'],
+        next: ['*'],
+      },
+    ],
     'no-restricted-imports': [
       'error',
       {
